@@ -16,9 +16,9 @@ Array.Reverse(revtext);
 string finaltext = new string(revtext);
         if (NumberText == finaltext)
         {
-        Console.WriteLine("да");
+                Console.WriteLine("да");
         }
        else
        {
-       Console.WriteLine("нет");
+                Console.WriteLine("нет");
        }
