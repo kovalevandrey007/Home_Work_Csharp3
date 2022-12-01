@@ -3,5 +3,13 @@
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
+int number = 
+string Recursion(int number)
+{
+    if(number == 1)
+       return number.ToString();
+return Recursion(number - 1) + number; 
+}
+Console.WriteLine(Recursion());
 
 
