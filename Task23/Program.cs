@@ -3,13 +3,31 @@
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
-int number = 
-string Recursion(int number)
+
+int GetNumber(string message)
 {
-    if(number == 1)
-       return number.ToString();
-return Recursion(number - 1) + number; 
+    int result = 0;
+    bool isCorrect = false;
+
+    while(!isCorrect)
+    {
+        Console.WriteLine(message);
+    
+        if(int.TryParse(Console.ReadLine(), out result) && result >= 1)
+        {
+            isCorrect = true;
+        }
+        else
+        {
+            Console.WriteLine("Ввели не число или 0. Введите целое число больше 0");
+        }
+    }
+
+    return result;
 }
-Console.WriteLine(Recursion());
 
-
+int lin = GetNumber("Введите число:");
+for(int i=1;i<=lin;i++)
+{
+    Console.Write($" {Math.Pow(i,3)}, ");
+}
