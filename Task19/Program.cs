@@ -14,11 +14,11 @@ string NumberText = Convert.ToString(Number);
 char[] revtext = NumberText.ToCharArray();
 Array.Reverse(revtext);
 string finaltext = new string(revtext);
-        if (NumberText == finaltext)
-        {
+            if (NumberText == finaltext)
+            {
                 Console.WriteLine("да");
-        }
-       else
-       {
+            }
+            else
+            {
                 Console.WriteLine("нет");
-       }
+            }

@@ -22,12 +22,10 @@ int GetNumber(string message)
             Console.WriteLine("Ввели не число или 0. Введите целое число больше 0");
         }
     }
-
     return result;
 }
-
 int lin = GetNumber("Введите число:");
 for(int i=1;i<=lin;i++)
 {
-    Console.Write($" {Math.Pow(i,3)}, ");
+Console.Write($" {Math.Pow(i,3)}, ");
 }
